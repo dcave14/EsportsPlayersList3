@@ -9,7 +9,6 @@
 <body>
     <h1>Select a Team to View Players</h1>
     <div>
-        <%-- Iterate over the teams and create a button for each --%>
         <c:forEach items="${teams}" var="team">
             <form action="viewPlayersByTeamServlet" method="get">
                 <input type="hidden" name="teamName" value="${team}">
