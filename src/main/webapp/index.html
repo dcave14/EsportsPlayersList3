@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Esports Player Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .menu {
+            margin-bottom: 20px;
+        }
+        .menu a {
+            text-decoration: none;
+            margin-right: 20px;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .menu a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Esports Player Management System</h1>
+    <div class="menu">
+        <a href="add-player.jsp">Add New Player</a>
+        <a href="viewPlayersServlet">View All Players</a>
+        <a href="addTeamServlet">Add New Team</a>
+        <a href="viewTeamsServlet">View All Teams</a>
+		<a href="viewPlayersByTeamServlet">View Players by Team</a>
+    </div>
+    <div>
+        <p>Welcome to the Esports Player Management System. Use the navigation links above to manage your team players and teams.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Esports Management. All rights reserved.</p>
+    </footer>
+</body>
+</html>
