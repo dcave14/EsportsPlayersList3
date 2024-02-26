@@ -36,12 +36,12 @@ public class AddTeamServlet extends HttpServlet {
             teamHelper.insertTeam(team);
 
             request.getSession().setAttribute("successMessage", "Team successfully added.");
-            response.sendRedirect("viewTeamsServlet"); // Use the correct URL or Servlet mapping
+            response.sendRedirect("viewTeamsServlet");
         } catch (Exception e) {
-            e.printStackTrace(); // Consider replacing with more robust logging
+            e.printStackTrace();
 
             request.getSession().setAttribute("errorMessage", "Error adding team. Please try again.");
-            response.sendRedirect("addTeam.jsp"); // Use the correct URL or JSP name
+            response.sendRedirect("addTeam.jsp");
         }
     }
 }
